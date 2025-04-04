@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Epic Mind</title>
+  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/about.css" />
+</head>
+<body>
+  <!-- Mobile Nav Toggle -->
+  <div class="mobile-nav-toggle" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <a href="/index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="/pages/course.html"><i class="fas fa-info-circle"></i> Course</a>
+    <div class="login">
+      <a href="/pages/login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+    </div>
+    <div class="login">
+      <a href="/pages/login.html"><i class="fas fa-user-plus"></i> Register</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h2 class="title">About Us</h2>
+    <p>
+      Welcome to the Epic Mind Institute, where we are dedicated to advancing the understanding and treatment of mental
+      health conditions. Our mission is to provide cutting-edge research, compassionate care, and comprehensive
+      education to improve the lives of individuals affected by mental health issues.
+    </p>
+    <img src="https://storage.googleapis.com/a1aa/image/Li6XaCOoJfytWN7SItWuLCCRN1fK7kTCDL2hcaQvE2E.jpg" alt="Meeting" class="main-img" />
+
+    <p>
+      Founded in 2020, the Epic Mind Institute has quickly become a leader in the field of mental health. Our team of
+      experts includes psychologists, psychiatrists, researchers, and educators who are all committed to making a
+      positive impact on the mental health community.
+    </p>
+    <p>
+      We offer a range of services including individual therapy, group therapy, workshops, and educational programs. Our
+      state-of-the-art facilities are designed to provide a comfortable and supportive environment for all our clients.
+    </p>
+
+    <h2 class="title">Our Team</h2>
+    <div class="team-grid">
+      <!-- Team Member -->
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/8007GuA3KcyQORxL3bq__kVWT7FnLbgBRuhjP_aVTIA.jpg" alt="Jane Smith" />
+        <h3>Jane Smith</h3>
+        <p>Java Developer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/7UnpuaMPvPnl8Fc_ynSd0v7bigVYvgG5cnJ5ncy0dso.jpg" alt="John Doe" />
+        <h3>John Doe</h3>
+        <p>UI/UX Designer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/weZJENKg1kwwPcMZouJFGqLi--dzmIDMlFrhusScOss.jpg" alt="Emily Johnson" />
+        <h3>Emily Johnson</h3>
+        <p>Video Editor</p>
+      </div>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/FZrtVxvMJP_P7xeCGX7mEWAogYGFDUVp8zWLNAhP38c.jpg" alt="Michael Brown" />
+        <h3>Michael Brown</h3>
+        <p>Data Scientist</p>
+      </div>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/hBnsi4HFS5BM4Z2fIEdHf9mUN7t5Qy1ATW_hNIV9X5A.jpg" alt="Sarah Davis" />
+        <h3>Sarah Davis</h3>
+        <p>Digital Marketing</p>
+      </div>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/N1rt1b_0FHxuPziApDtMiWRx2TfLdokrhd_3S11NbvY.jpg" alt="David Wilson" />
+        <h3>David Wilson</h3>
+        <p>BPO</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

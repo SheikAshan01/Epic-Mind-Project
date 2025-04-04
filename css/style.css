@@ -1,0 +1,245 @@
+/* General Styles */
+* {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background: linear-gradient(135deg, #007BFF, #00E5FF);
+    padding-top: 30px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar a {
+    margin-top: 35px;
+    font-family: 'Patua One', sans-serif;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: orange;
+}
+
+/* Sidebar Toggle Button */
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index: 1001;
+    display: none;
+}
+
+/* Main Content */
+.main {
+    background-color: black;
+    text-align: center;
+    margin-left: 250px;
+    padding: 20px;
+    color: white;
+}
+
+.h {
+    font-weight: bolder;
+    font-family: 'Garamond', serif;
+    letter-spacing: 1px;
+    color: #c71d0b;
+    padding-top: 10px;
+    font-size: 60px;
+}
+
+.p, p {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: inline;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Carousel */
+.carousel-inner {
+    height: 300px;
+}
+
+.carousel-item img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+/* Sections */
+.us h1, .us h2 {
+    color: #FF00FF;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+.bottom p {
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    display: inline-block;
+}
+
+.head {
+    background-color: greenyellow;
+    font-weight: bolder;
+    padding: 10px;
+    display: inline-block;
+}
+
+.list ol {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    color: whitesmoke;
+    list-style-type: none;
+}
+
+/* Footer */
+.footer {
+    color: #d209cf;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .container .column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+.footer .container .column h3 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.footer .container .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .container .column ul li {
+    margin-bottom: 10px;
+}
+
+.footer .container .column ul li a {
+    font-weight: bold;
+    color: #bdc1b5;
+    text-decoration: none;
+}
+
+.footer .container .column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    margin-top: 20px;
+}
+
+.footer .social-icons a {
+    color: #ef0c0cf8;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer .social-icons a:hover {
+    color: #62ea23;
+}
+
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+    .main {
+        margin-left: 200px;
+    }
+    .h {
+        font-size: 50px;
+    }
+    .list ol {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 768px) {
+    .toggle-btn {
+        display: block;
+    }
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+    }
+    .sidebar.active {
+        left: 0;
+    }
+    .main {
+        margin-left: 0;
+        padding: 10px;
+    }
+    .h {
+        font-size: 35px;
+    }
+    .carousel-inner {
+        height: 200px;
+    }
+    .head {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .list ol {
+        font-size: small;
+        padding: 5px;
+    }
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .footer .container .column {
+        min-width: 100%;
+        text-align: center;
+    }
+    .footer .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+}
