@@ -1,160 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
-  <link rel="icon" href="icon.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  </link>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/about.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Epic Mind</title>
+  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/about.css" />
 </head>
-
 <body>
-  <!--Nav Bar-->
-  <div class="sidebar">
-    <a href="/pages/about.html"><i class="fas fa-home"></i> Home</a>
-    <br><br>
+  <!-- Mobile Nav Toggle -->
+  <div class="mobile-nav-toggle" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <a href="/pages/index.html"><i class="fas fa-home"></i> Home</a>
     <a href="/pages/course.html"><i class="fas fa-info-circle"></i> Course</a>
     <div class="login">
       <a href="/pages/login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
     </div>
     <div class="login">
-      <a href="/pages/login.html"><i class="fas fa-solid fa-plus"></i> Register</a>
+      <a href="/pages/login.html"><i class="fas fa-user-plus"></i> Register</a>
     </div>
   </div>
 
+  <!-- Main Content -->
   <div class="main">
-
-    <h2 class="text-3xl font-bold mb-4">
-      About Us
-    </h2>
-    <p class="mb-4">
+    <h2 class="title">About Us</h2>
+    <p>
       Welcome to the Epic Mind Institute, where we are dedicated to advancing the understanding and treatment of mental
       health conditions. Our mission is to provide cutting-edge research, compassionate care, and comprehensive
       education to improve the lives of individuals affected by mental health issues.
     </p>
-    <img alt="A group of diverse people in a meeting room discussing mental health topics"
-      class="w-full mb-4 rounded-lg" height="400"
-      src="https://storage.googleapis.com/a1aa/image/Li6XaCOoJfytWN7SItWuLCCRN1fK7kTCDL2hcaQvE2E.jpg" width="600" />
-    <p class="mb-4">
+    <img src="https://storage.googleapis.com/a1aa/image/Li6XaCOoJfytWN7SItWuLCCRN1fK7kTCDL2hcaQvE2E.jpg" alt="Meeting" class="main-img" />
+
+    <p>
       Founded in 2020, the Epic Mind Institute has quickly become a leader in the field of mental health. Our team of
       experts includes psychologists, psychiatrists, researchers, and educators who are all committed to making a
       positive impact on the mental health community.
     </p>
-    <p class="mb-4">
+    <p>
       We offer a range of services including individual therapy, group therapy, workshops, and educational programs. Our
       state-of-the-art facilities are designed to provide a comfortable and supportive environment for all our clients.
     </p>
-    </section>
-    <section class="mt-8">
-      <h2 class="text-3xl font-bold mb-4">
-        Our Team
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img alt="Portrait of Dr. Jane Smith, Chief Psychologist" class="w-full mt-5 mb-4 rounded-full" height="300"
-            src="https://storage.googleapis.com/a1aa/image/8007GuA3KcyQORxL3bq__kVWT7FnLbgBRuhjP_aVTIA.jpg"
-            width="300" />
-          <h3 class="text-xl font-bold mb-2">
-            Jane Smith
-          </h3>
-          <p class="text-gray-600">
-            Java Developer
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img alt="Portrait of Dr. John Doe, Lead Psychiatrist" class="w-full mt-5 mb-4 rounded-full" height="300"
-            src="https://storage.googleapis.com/a1aa/image/7UnpuaMPvPnl8Fc_ynSd0v7bigVYvgG5cnJ5ncy0dso.jpg"
-            width="300" />
-          <h3 class="text-xl font-bold mb-2">
-            John Doe
-          </h3>
-          <p class="text-gray-600">
-            UI/UX Designer
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img alt="Portrait of Dr. Emily Johnson, Research Director" class="w-full mt-5 mb-4 rounded-full" height="300"
-            src="https://storage.googleapis.com/a1aa/image/weZJENKg1kwwPcMZouJFGqLi--dzmIDMlFrhusScOss.jpg"
-            width="300" />
-          <h3 class="text-xl font-bold mb-2">
-            Emily Johnson
-          </h3>
-          <p class="text-gray-600">
-            Video Editer
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img alt="Portrait of Dr. Michael Brown, Educational Coordinator" class="w-full mt-5 mb-4 rounded-full"
-            height="300" src="https://storage.googleapis.com/a1aa/image/FZrtVxvMJP_P7xeCGX7mEWAogYGFDUVp8zWLNAhP38c.jpg"
-            width="300" />
-          <h3 class="text-xl font-bold mb-2">
-            Michael Brown
-          </h3>
-          <p class="text-gray-600">
-            Data Scientist
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img alt="Portrait of Dr. Sarah Davis, Clinical Psychologist" class="w-full mb-4 mt-5 rounded-full" height="300"
-            src="https://storage.googleapis.com/a1aa/image/hBnsi4HFS5BM4Z2fIEdHf9mUN7t5Qy1ATW_hNIV9X5A.jpg"
-            width="300" />
-          <h3 class="text-xl font-bold mb-2">
-             Sarah Davis
-          </h3>
-          <p class="text-gray-600">
-            Digital Marketing
-          </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-          <img alt="Portrait of Dr. David Wilson, Therapist" class="w-full mb-4  mt-5 rounded-full" height="300"
-            src="https://storage.googleapis.com/a1aa/image/N1rt1b_0FHxuPziApDtMiWRx2TfLdokrhd_3S11NbvY.jpg"
-            width="300" />
-          <h3 class="text-xl font-bold mb-2">
-            David Wilson
-          </h3>
-          <p class="text-gray-600 ">
-            BPO
-          </p>
-        </div>
+
+    <h2 class="title">Our Team</h2>
+    <div class="team-grid">
+      <!-- Team Member -->
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/8007GuA3KcyQORxL3bq__kVWT7FnLbgBRuhjP_aVTIA.jpg" alt="Jane Smith" />
+        <h3>Jane Smith</h3>
+        <p>Java Developer</p>
       </div>
-    </section>
-    </main>
-    <br>
-        <div class="flex justify-center space-x-4 mt-2">
-          <a class="hover:underline" href="#">
-            <i class="fab fa-facebook-f">
-            </i>
-          </a>
-          <a class="hover:underline" href="#">
-            <i class="fab fa-twitter">
-            </i>
-          </a>
-          <a class="hover:underline" href="#">
-            <i class="fab fa-linkedin-in">
-            </i>
-          </a>
-          <a class="hover:underline" href="#">
-            <i class="fab fa-instagram">
-            </i>
-          </a>
-        </div>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/7UnpuaMPvPnl8Fc_ynSd0v7bigVYvgG5cnJ5ncy0dso.jpg" alt="John Doe" />
+        <h3>John Doe</h3>
+        <p>UI/UX Designer</p>
       </div>
-    </footer>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/weZJENKg1kwwPcMZouJFGqLi--dzmIDMlFrhusScOss.jpg" alt="Emily Johnson" />
+        <h3>Emily Johnson</h3>
+        <p>Video Editor</p>
+      </div>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/FZrtVxvMJP_P7xeCGX7mEWAogYGFDUVp8zWLNAhP38c.jpg" alt="Michael Brown" />
+        <h3>Michael Brown</h3>
+        <p>Data Scientist</p>
+      </div>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/hBnsi4HFS5BM4Z2fIEdHf9mUN7t5Qy1ATW_hNIV9X5A.jpg" alt="Sarah Davis" />
+        <h3>Sarah Davis</h3>
+        <p>Digital Marketing</p>
+      </div>
+      <div class="team-card">
+        <img src="https://storage.googleapis.com/a1aa/image/N1rt1b_0FHxuPziApDtMiWRx2TfLdokrhd_3S11NbvY.jpg" alt="David Wilson" />
+        <h3>David Wilson</h3>
+        <p>BPO</p>
+      </div>
+    </div>
 
-
-
-
-
+    <!-- Footer -->
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
   </div>
 
-
-  </div>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('show');
+    }
+  </script>
 </body>
-
 </html>

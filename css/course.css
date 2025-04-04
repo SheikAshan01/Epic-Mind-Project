@@ -1,7 +1,12 @@
+/* Global Styles */
 * {
   font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Sidebar */
 .sidebar {
   height: 100vh;
   position: fixed;
@@ -10,85 +15,117 @@
   width: 250px;
   background: linear-gradient(135deg, #007BFF, #00E5FF);
   padding-top: 30px;
+  z-index: 100;
+  transition: transform 0.3s ease-in-out;
 }
 
 .sidebar a {
-  font-family: Patua One;
+  margin-top: 25px;
+  font-family: 'Patua One', cursive;
   padding: 15px;
   text-decoration: none;
   font-size: 19px;
   color: white;
   display: block;
+  transition: background 0.3s;
 }
 
 .sidebar a:hover {
   background-color: orange;
 }
 
-.login {
-  margin-top: 50px;
+/* Sidebar Toggle for Mobile */
+.toggle-btn {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 101;
 }
 
+/* Main Content */
 .main {
   background-color: #090909;
   margin-left: 250px;
-
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out;
 }
-.head{
+
+.course-header {
   text-align: center;
   font-weight: bolder;
   color: #007BFF;
-  font-size: 60px;
-  margin: 0;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
+/* Course Section */
 .course-section {
   background-color: #101010;
   padding: 20px;
-  
 }
 
-.p{
-  font-family: 'Times New Roman';
+.course-title {
   font-size: 20px;
   margin-top: 10px;
   text-align: center;
   color: white;
 }
 
-.photo-box {
-  margin-right: 35px;
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin-top: 30px;
-  display: inline-block;
-  margin-left: 20px;
-  width: 20%;
-  height: 40%;
+}
+
+.photo-box {
+  flex: 1 1 300px;
+  max-width: 300px;
   border: 1px solid #ddd;
-  border-radius: 50px;
+  border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.photo-box img {
+.photo-box video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .photo-box:hover {
-  animation: photo-box 1s ease infinite;
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
 }
 
-@keyframes photo-box {
-  0% {
-    transform: scale(1);
+/* Responsive Design */
+@media (max-width: 768px) {
+  .toggle-btn {
+    display: block;
   }
-  50% {
-    transform: scale(1.1);
+
+  .sidebar {
+    transform: translateX(-100%);
+    width: 200px;
   }
-  100% {
-    transform: scale(1);
+
+  .sidebar.show {
+    transform: translateX(0);
   }
+
+  .main {
+    margin-left: 0;
+  }
+}
+.course-header{
+  font-size: 40px;
+  margin-top: 20px;
+  color: #007BFF;
 }
